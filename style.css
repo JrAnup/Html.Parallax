@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background: rgb(51, 142, 195);
+}
+
+.img1 {
+    background-size: cover;
+    background: yellowgreen url(unsplash5.jpg) no-repeat center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} 
+
+.hero {
+    border-radius: 5px;
+    padding: 2rem;
+    width: 40%;
+    height: 40%;
+    background: rgba(0, 0, 0, 0.331);
+    color: rgb(170, 210, 246);
+    z-index: 10;
+    border: 3px solid rgba(245, 245, 245, 0.509);
+    backdrop-filter: blur(5px);
+   
+}
+
+section {
+    width: 80%;
+    margin: auto;
+}
+
+
+.img2 {
+    /* width: 100%; */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background: url(unsplash5.jpg) no-repeat center center;
+    height: 100vh;
+}
+
+.title{
+    background: rgba(0, 0, 0, 0.253);
+    padding: 20px 48px;
+    color: aliceblue;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    border-radius: 50px;
+}
+
+.img3 {
+    /* width: 100%; */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background: url(img2.jpg) no-repeat center center;
+    height: 100vh;
+}
+
+.img1,.img2,.img3{
+    background-attachment: fixed;
+}
+
+.round{
+    background: radial-gradient(rgb(12, 12, 12),rgb(63, 63, 67));
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    left: 320px;
+}
+
+.down-arrow {
+    padding-bottom: 8px;
+    font-size: 3rem;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 50px;
+    transform: rotate(90deg);
+
+    animation: go-down 1s infinite;
+}
+
+@keyframes go-down {
+    0%{
+        bottom: 50px;
+        color:indianred;
+    }
+    50%{
+        bottom: 50px;
+        color:rgb(225, 222, 52);
+    }
+    100%{
+        bottom: 10px;
+        color:rgb(22, 29, 228);
+    }
+}
